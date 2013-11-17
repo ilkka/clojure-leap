@@ -1,4 +1,4 @@
-(ns clojure-leap.spotkula.koppi
+(ns spotkula.koppi
   (:require [clojure-leap.core :as leap]
             [clojure-leap.gestures :as gestures]))
 
