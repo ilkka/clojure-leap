@@ -1,6 +1,7 @@
 (ns spotkula.koppi
   (:require [clojure-leap.core :as leap]
-            [clojure-leap.gestures :as gestures]))
+            [clojure-leap.gestures :as gestures]
+            [clj-http.client :as client]))
 
 ;; will store frame id limit for reacting, this will help limit
 ;; false positives
@@ -21,7 +22,7 @@
 (defn skip-track
   "Cause player to skip to next track"
   []
-  nil)
+  (client/post "http://localhost:3000/skip"))
 
 (defn process-frame
   "Process frames. Detects things moving fast in either the positive or negative Z direction."
