@@ -20,6 +20,7 @@
 
 (defn skip-track
   "Cause player to skip to next track"
+  []
   nil)
 
 (defn process-frame
