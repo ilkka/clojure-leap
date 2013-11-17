@@ -1,3 +1,10 @@
+# Whuzzat?
+
+This repo contains my experiments based on [ohpauleez/clojure-leap](http://github.com/ohpauleez/clojure-leap).
+Right now what it is is a client of sorts for [spotkula-server](http://github.com/ilkka/spotkula-server), allowing
+you to control a Spotify instance running on OSX. The only thing it currently does is detect objects ("hands") moving
+fast in the +/- Z direction, which causes it to instruct spotkula-server to skip to the next track.
+
 # Notice
 This is very much a work in progress, as I interact and develop more with the Leap Motion
 
